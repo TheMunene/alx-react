@@ -12,7 +12,7 @@ import './App.css';
       <body className='App-body'>
         <p>Login to access the full dashboard</p>
       </body>
-      
+
     <hr className='hr'></hr>
       <footer className='App-footer'>
         <p>Copyright 2020 - holberton School</p>
