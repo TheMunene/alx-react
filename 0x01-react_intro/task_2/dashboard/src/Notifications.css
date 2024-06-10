@@ -1,4 +1,12 @@
 .Notifications {
-    padding: 70px;
-    border: 1px solid red;
+    padding: 10px;
+    border: 0.8px solid red;
+    height: fit-content;
+}
+ul li[data-priority="default"] {
+    color: blue;
+}
+
+ul li[data-priority="urgent"] {
+    color: red;
 }

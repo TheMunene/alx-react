@@ -1,5 +1,5 @@
-export function getCurrentYear(){
-    const currentDate = new Date().getCurrentYear();
+export function getFullYear(){
+    const currentDate = new Date().getFullYear();
     return currentDate;
 }
   export function getFooterCopy(isIndex) {
@@ -9,3 +9,6 @@ export function getCurrentYear(){
       return "Holberton School main dashboard";
     }
   }
+  export function getLatestNotification(){
+    return "<strong>Urgent requirement</strong> - complete by EOD";
+}
