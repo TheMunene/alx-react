@@ -1,8 +1,7 @@
 import React from 'react'
 import './Notifications.css';
-import { getLatestNotification } from './utils';
-import close from './close-icon.png'
-
+import { getLatestNotification } from '../utils';
+import close from '../assets/close-icon.png';
 
 const styles = {
     position: 'relative',
@@ -20,7 +19,7 @@ const notification = getLatestNotification();
 
 export default function Notifications(){
     return(
-        <div className='Notifications'>
+         <div className='Notifications'>
             <p>Here is the list of notifications</p>
             <button style={styles} arial-label="Close" onClick={printOnClick}>
                 <img src={close} alt="Close" width="10px"/>
@@ -30,6 +29,7 @@ export default function Notifications(){
                 <li data-priority="urgent">New resume available</li>
                 <li data-priority="urgent" dangerouslySetInnerHTML={{__html: notification}}></li>
             </ul>
-        </div>
+        </div> 
+        
     );
 }
